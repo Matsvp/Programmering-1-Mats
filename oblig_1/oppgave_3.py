@@ -6,7 +6,7 @@ tall_1=float(input("Skriv inn det første tallet du vil ha i kalkulatoren"))
 tall_2=float(input("Skriv inn det andre tallet du vil ha i kalkulatoren"))
 
 #Her utfører den de forskjelige utregningende og gjør de om til nye variabler
-#eks "Gange" blir det førte tallet brukern la inn ganger det andre tallet
+#Eks "Gange" blir det førte tallet brukern la inn ganger det andre tallet
 Gange=(tall_1*tall_2)
 Dele=(tall_1/tall_2)
 Pluss=(tall_1+tall_2)
