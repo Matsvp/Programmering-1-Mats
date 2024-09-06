@@ -12,7 +12,7 @@ antall_personer=5
 #Ber den printe antall personer som har spist, og antall småkaker som har blidt spist
 print("Antall småkaker som har blidt spist", antall_smaakaker)
 print("Antall peroner", antall_personer)
-#Lager en ny variabel som regner ut gjenomsittet på antall småkaker spist
+#Lager en ny variabel som regner ut gjenomsittet på antall småkaker spist i heltall
 gjennomsitt=int(antall_smaakaker/antall_personer)
-#printer Gjennomsittet
+#printer Gjennomsittet i heltall
 print("Gjenomsittet av kaker som har blidt spist", gjennomsitt)
