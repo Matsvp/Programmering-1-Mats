@@ -6,4 +6,5 @@ while tall <= 101:
         oddetall.append(tall)
     tall += 1
 
-print('her')
+print('her kommer en liste med alle oddetallene fra 9-101 i en liste')
+print(oddetall)
