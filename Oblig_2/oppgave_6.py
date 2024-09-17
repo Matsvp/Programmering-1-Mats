@@ -5,15 +5,15 @@ liste = []
 while True:
     # Tar inn kommandoen fra brukeren
     komando = input('Skriv "L" for å legge til ting, "T" for å fjerne ting, "H" for å vise hele listen, og "stopp" for å stoppe programmet.')
-
+    komando = komando.lower() # Gjør at koden kjører uansett store eller små bokstaver
     # Sjekk hva brukeren vil gjøre
-    if komando == "L" or "l": 
+    if komando == "l": 
         # Hvis brukeren vil legge til noe, spør etter det
         ting = input("Hva vil du legge til? ")
         liste.append(ting)  # Legger til elementet i listen
         print(f'"{ting}" er lagt til i listen.')
 
-    elif komando == "T" or "t":
+    elif komando == "t":
         # Hvis brukeren vil fjerne noe, spør etter hva de vil fjerne
         ting = input("Hva vil du ta bort fra listen? ")
         if ting in liste:
@@ -23,13 +23,13 @@ while True:
             # Hvis elementet ikke finnes i listen
             print(f'"{ting}" finnes ikke i listen.')
 
-    elif komando == "H" or "h":
+    elif komando == "h":
         # Hvis brukeren vil se hele listen
         print("Her er listen:")
         for H in liste:
             print(H)  # Skriver ut hvert element i listen
 
-    elif komando.lower() == "stopp" or "Stopp":
+    elif komando == "stopp":
         # Hvis brukeren vil stoppe programmet
         print("Programmet er ferdig.")
         print(f'Her er listen: {liste} i tilfelle du trenger det senere :)')
