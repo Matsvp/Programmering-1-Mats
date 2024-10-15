@@ -47,3 +47,4 @@ while run == True:
 
     #midlertigavslutningskode
     run = False
+    
