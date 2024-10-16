@@ -3,7 +3,12 @@ filmer = [{"tittel" : "Inception", "år" :  2010, "rating": 8.7 },
           {"tittel": "Con Air", "år" : 1997,  "rating": 6.9 },
           ]
 
-print(filmer)
+def skriv_ut_filmer(filmer):
+    for film in filmer:
+        print(f"Tittel: {film['tittel']}, År: {film['år']}, Rating: {film['rating']}")
+
+skriv_ut_filmer(filmer)
+print("\n")
 
 # Legger til tre filmer
 filmer.extend([
@@ -11,7 +16,8 @@ filmer.extend([
     {"tittel" : "The Dark Knight" , "år" : 2008 , "rating" : 9.0},
     {"tittel" : "Starwars - Stjernekrigen" , "år" : 1977 , "rating" : 8.6}])
 
-print(filmer)
+skriv_ut_filmer(filmer)
+print("\n")
 
 # Gir filmen en default rating på 5.0 hvis det ikke gis noen rating som argument til funksjonen
 def legg_til_film(tittel, år, rating=5.0):
@@ -19,6 +25,6 @@ def legg_til_film(tittel, år, rating=5.0):
 
 # Eksempel på å legge til en film uten å spesifisere rating
 legg_til_film("Alvin og Gjengen", 2007)
-print(filmer)
+skriv_ut_filmer(filmer)
 
 
