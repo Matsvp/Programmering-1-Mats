@@ -1,0 +1,14 @@
+[
+    {
+        "navn": "Merkur",
+        "tyngdekraft": 3.7
+    },
+    {
+        "navn": "Venus",
+        "tyngdekraft": 8.87
+    },
+    {
+        "navn": "Jorda",
+        "tyngdekraft": 9.807
+    }
+]
