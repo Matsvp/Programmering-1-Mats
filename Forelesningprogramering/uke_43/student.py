@@ -1,20 +1,42 @@
 
 
 class Student:
+    """
+    Klassen Student har attributtene first_name, last_name, age og student_id.
+    """
     def __init__(self, first_name, last_name, age , student_id):
+        """
+        INIT kjører automatisk når et objekt av klassen Student blir opprettet.
+        :param first_name: Fornavn til studenten
+        :param last_name: Etternavn til studenten
+        :param age: Alder til studenten
+        :param student_id: Studentnummeret til studenten
+        """
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
         self.student_id = student_id
+        self.courses = []
 
 
     def get_full_name(self):
         return f'{self.first_name} {self.last_name}'
 
-nils_nilsen = Student("Nils", "Nilsen", 22, "IT123")
-anne_annesen = Student("Anne", "Annesen", 21, "IT124")
 
-print(f'{nils_nilsen.first_name} {nils_nilsen.last_name} er {nils_nilsen.age} år gammel og har student id {nils_nilsen.student_id}')
-print(f'{anne_annesen.first_name} {anne_annesen.last_name} er {anne_annesen.age} år gammel og har student id {anne_annesen.student_id}')
+    def enroll_in_course(self, course):
+        self.courses.append(course)
 
-print(nils_nilsen.get_full_name())
+    def get_total_credits(self):
+        total_credits = 0
+        for course in self.courses:
+            total_credits += course.credits
+        return total_credits
+    
+    
+        
+class Course:
+    def __init__(self, name, code, credits):
+        self.name = name
+        self.code = code
+        self.credits = credits
+
