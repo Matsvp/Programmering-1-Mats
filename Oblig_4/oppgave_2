@@ -1,0 +1,23 @@
+
+
+#Startet med å definere alle de nødvendige klassene.
+
+# Klasse for hvert enkelt kort
+class Kort:
+    def __init__(self, verdi, navn):
+        self.verdi = verdi
+        self.navn = navn
+        
+
+
+# Klasse for kortstokken
+class Kortstokk:
+    def __init__(self):
+        self.kort = self.opprett_kortstokk()
+
+
+    def opprett_kortstokk(self):
+        kort = []
+        verdier = list(range(2,11)) + [10,10,10] # 10 for billedkort J, Q, K
+        navn = ['To','Tre','Fire','Fem']
+        
